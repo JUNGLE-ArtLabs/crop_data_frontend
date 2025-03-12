@@ -8,7 +8,7 @@ const CropList = () => {
   useEffect(() => {
     async function fetchCrops() {
       try {
-        const response = await axios.get("http://localhost:5000/crops");
+        const response = await axios.get("organiccertificationbackend-production.up.railway.app/crops");
         setCrops(response.data);
       } catch (error) {
         console.error("データ取得エラー:", error);
