@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { QRCodeCanvas } from "qrcode.react";
+import { useRef } from "react";
+
 
 const CropList = () => {
   const [crops, setCrops] = useState([]);
