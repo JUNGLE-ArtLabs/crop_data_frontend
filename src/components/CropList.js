@@ -23,9 +23,9 @@ const CropList = () => {
       <h1>QRコード</h1>
       {crops.map((crop, index) => (
         <div key={index} style={{ border: "1px solid #ccc", padding: "10px", marginBottom: "10px" }}>
-          <QRCodeCanvas value={`https://organic-certification-frontend.vercel.app/crop/${crop.ipfsHash}`} />
+          <QRCodeCanvas value={`https://crop-data.vercel.app//crop/${crop.ipfsHash}`} />
           <p>
-            <a href={`https://organic-certification-frontend.vercel.app//crop/${crop.ipfsHash}`} target="_blank" rel="noopener noreferrer">
+            <a href={`https://crop-data.vercel.app///crop/${crop.ipfsHash}`} target="_blank" rel="noopener noreferrer">
               IPFS データを見る
             </a>
           </p>
