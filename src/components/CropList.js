@@ -23,7 +23,7 @@ const CropList = () => {
       <h1>QRコード</h1>
       {crops.map((crop, index) => (
         <div key={index} style={{ border: "1px solid #ccc", padding: "10px", marginBottom: "10px" }}>
-          <QRCodeCanvas value="https://example.com" />
+          <QRCodeCanvas value={`https://crop-data.vercel.app/crop/${crop.ipfsHash}`} />
           <p>
             <a href={`https://crop-data.vercel.app/crop/${crop.ipfsHash}`} target="_blank" rel="noopener noreferrer">
               IPFS データを見る
