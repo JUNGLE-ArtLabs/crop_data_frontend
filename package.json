@@ -1,6 +1,6 @@
 {
-  "name": "organic-certification",
-  "version": "0.1.0",
+  "name": "crop_data",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
