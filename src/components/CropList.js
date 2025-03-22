@@ -9,7 +9,7 @@ const CropList = () => {
   useEffect(() => {
     async function fetchCrops() {
       try {
-        const response = await axios.get("https://organiccertificationbackend-production.up.railway.app/crops");
+        const response = await axios.get("https://crop_data_backend.railway.internal");
         setCrops(response.data);
       } catch (error) {
         console.error("データ取得エラー:", error);
