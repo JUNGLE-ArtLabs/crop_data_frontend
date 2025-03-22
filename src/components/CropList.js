@@ -9,7 +9,7 @@ const CropList = () => {
   useEffect(() => {
     async function fetchCrops() {
       try {
-        const response = await axios.get("https://cropdatabackend-production.up.railway.app/crops");
+        const response = await axios.get("https://cropdatabackend-production.up.railway.app/crops"); //Railwayのsettingからpublic networkのgenerate domainのアドレスに/cropsを付け加えたもの
         
         console.log("APIから取得したデータ:", response.data); // 受け取ったデータをログに出力
         
